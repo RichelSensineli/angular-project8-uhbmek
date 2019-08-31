@@ -28,6 +28,7 @@ export class CartService {
   }
 
   deleteItem(product){
-    return this.items.splice(product,1);
+    var index = this.items.indexOf(product);
+    this.items.splice(index,1);
   }
 }

@@ -33,6 +33,7 @@ export class CartComponent {
   }
 
   onDelete(product){
-    this.items = this.cartService.deleteItem(product);
+    this.cartService.deleteItem(product);
+    // this.items = this.cartService.getItems();
   }
-}
+} 
